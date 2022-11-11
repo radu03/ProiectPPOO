@@ -81,7 +81,7 @@ public class Main {
 							  
 								  try {
 									  	String s = scannerCreate.nextLine();
-									  	if(s=="") throw new NullStringException();								
+									  	if(s.equals("")) throw new NullStringException();								
 										FileObject f2 = new FileObject(s);
 										f2.createNewFile();
 										files.add(f2);
